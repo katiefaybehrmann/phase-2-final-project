@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Knit Mittens",
+            "image": "https://images4-f.ravelrycache.com/uploads/JessicaGore/823497263/webp/_MG_802241edit_medium2.webp#jpg",
+            "difficulty": 3,
+            "materials": ["yarn", "knitting needles"],
+            "description": "Wonderfully warm ribbed knit mittens. The brioche stitch allows for a colorful, fun striped pattern."
+        },
+        {
+            "id": 2,
+            "name": "Embroidered Trees",
+            "image": "https://cutesycrafts.com/wp-content/uploads/2019/12/il_1588xN.1601293003_mhqv.jpg",
+            "difficulty": 1,
+            "materials": ["embroidery floss", "needles", "canvas"],
+            "description": "Using seed stitches, back stitches, and satin stitches, create a perfect wall hanging for any rustic cabin!"
+        },
+        {
+            "id": 3,
+            "name": "Darned Socks",
+            "image": "https://i0.wp.com/blog.treasurie.com/wp-content/uploads/2020/10/darning-3.jpg",
+            "difficulty": 2,
+            "materials": ["yarn", "needles"],
+            "description": "Never throw away another sock! Mending your own socks is fun and simple."
+        },
+        {
+            "id": 4,
+            "name": "Crocheted Doll",
+            "image": "https://images4-f.ravelrycache.com/uploads/CAROcreated/802244485/webp/A_medium2.webp#jpg",
+            "difficulty": 5,
+            "materials": ["yarn", "crochet hook"],
+            "description": "Create a doll with anyone's likeness with this advanced crochet pattern!"
+        },
+        {
+            "id": 5,
+            "name": "Embroidered Jungle",
+            "image": "https://i.pinimg.com/originals/e9/9a/e3/e99ae391b66dc14c4da438171cbf245e.jpg",
+            "difficulty": 4,
+            "materials": ["embroidery floss", "needles", "canvas"],
+            "description": "Ready to step up your embroidery game? Check out this embroidered jungle filled with complicated stitches."
+        }
+    ]
+}
