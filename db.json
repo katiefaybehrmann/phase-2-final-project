@@ -13,7 +13,7 @@
             "name": "Embroidered Trees",
             "image": "https://cutesycrafts.com/wp-content/uploads/2019/12/il_1588xN.1601293003_mhqv.jpg",
             "difficulty": 1,
-            "materials": ["embroidery floss", "needles", "canvas"],
+            "materials": ["embroidery floss", "needles"],
             "description": "Using seed stitches, back stitches, and satin stitches, create a perfect wall hanging for any rustic cabin!"
         },
         {
@@ -37,7 +37,7 @@
             "name": "Embroidered Jungle",
             "image": "https://i.pinimg.com/originals/e9/9a/e3/e99ae391b66dc14c4da438171cbf245e.jpg",
             "difficulty": 4,
-            "materials": ["embroidery floss", "needles", "canvas"],
+            "materials": ["embroidery floss", "needles"],
             "description": "Ready to step up your embroidery game? Check out this embroidered jungle filled with complicated stitches."
         }
     ]
