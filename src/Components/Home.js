@@ -5,7 +5,7 @@ import ProjectList from "./ProjectList";
 function Home({projectList}){
     return (
         <div>
-            <h1>I'm the home container, where projects and search will be stored</h1>
+            <h1>Welcome to HTTP: Happy Trying Textile Projects!</h1>
             <SearchForm />
             <ProjectList projectList={projectList}/>
         </div>
