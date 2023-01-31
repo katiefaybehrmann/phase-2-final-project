@@ -6,6 +6,7 @@ import AddProject from './AddProject';
 
 function App() {
   const [projectList, setProjectList] = useState([])
+  const [projectType, setProjectType] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:3001/projects")
