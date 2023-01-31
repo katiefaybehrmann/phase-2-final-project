@@ -1,6 +1,7 @@
 import React from "react";
 
 function ProjectCard({ project }) {
+
     return (
         <li className="card">
             <img src={project.image} alt={project.name}/>
