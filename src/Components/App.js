@@ -6,7 +6,7 @@ import AddProject from './AddProject';
 
 function App() {
   const [projectList, setProjectList] = useState([])
-  const [projectType, setProjectType] = useState("")
+  const [projectType, setProjectType] = useState("All")
 
   useEffect(() => {
     fetch("http://localhost:3001/projects")
@@ -14,10 +14,15 @@ function App() {
       .then((allProjects) => setProjectList(allProjects))
   }, [])
 
+  function handleProjectTypeChange(event){
+    setProjectType(event.target.value)
+
+  }
+
   return (
     <div>
       <NavBar />
-      <Home projectList={projectList}/>
+      <Home projectList={projectList} projectType={projectType} handleProjectTypeChange={handleProjectTypeChange}/>
       <MyProjects />
       <AddProject />
     </div>
