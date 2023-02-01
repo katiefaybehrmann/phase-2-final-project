@@ -6,8 +6,8 @@ function NavBar(){
     const linkStyles = {
         width: "100px",
         padding: "12px",
-        margin: "0 6px 6px",
-        background: "blue",
+        margin: "2px",
+        background: "darkolivegreen",
         textDecoration: "none",
         color: "white",
       };
@@ -19,7 +19,7 @@ function NavBar(){
              exact
              style={linkStyles}
              activeStyle={{
-               background: "darkblue",
+               background: "sienna",
              }}>
                 Home
             </NavLink>
@@ -28,7 +28,7 @@ function NavBar(){
             exact
             style={linkStyles}
             activeStyle={{
-              background: "darkblue",
+              background: "sienna",
             }}>
                 My Projects
             </NavLink>
@@ -37,7 +37,7 @@ function NavBar(){
             exact
             style={linkStyles}
             activeStyle={{
-              background: "darkblue",
+              background: "sienna",
             }}>
                 Add a project to HTTP
             </NavLink>
