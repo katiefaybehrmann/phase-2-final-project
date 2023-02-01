@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import MyProjects from './MyProjects';
@@ -14,7 +15,7 @@ function App() {
       .then((allProjects) => setProjectList(allProjects))
   }, [])
 
-  function handleProjectTypeChange(event){
+  function handleProjectTypeChange(event) {
     setProjectType(event.target.value)
 
   }
@@ -22,9 +23,18 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home projectList={projectList} projectType={projectType} handleProjectTypeChange={handleProjectTypeChange}/>
-      <MyProjects />
-      <AddProject />
+      <Switch>
+        <Route exact path="/myprojects">
+          <MyProjects />
+        </Route>
+        <Route exact path="/addproject">
+          <AddProject />
+        </Route>
+        <Route exact path="/">
+          <Home projectList={projectList} projectType={projectType} handleProjectTypeChange={handleProjectTypeChange} />
+        </Route>
+      </Switch>
+
     </div>
   );
 }
