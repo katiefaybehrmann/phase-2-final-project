@@ -17,6 +17,10 @@ function App() {
 
   function handleProjectTypeChange(event) {
     setProjectType(event.target.value)
+  }
+
+  function handleAddProject(newProject){
+    setProjectList([...projectList, newProject])
 
   }
 
@@ -28,7 +32,7 @@ function App() {
           <MyProjects />
         </Route>
         <Route exact path="/addproject">
-          <AddProject />
+          <AddProject handleAddProject={handleAddProject}/>
         </Route>
         <Route exact path="/">
           <Home projectList={projectList} projectType={projectType} handleProjectTypeChange={handleProjectTypeChange} />
