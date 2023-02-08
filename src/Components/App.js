@@ -26,17 +26,17 @@ function App() {
   }
 
   function handleAddToMyList(event) {
-    console.log(event.target.id)
     const myNewProject = projectList.find(project => project.name === event.target.id)
     setMyProjectList([...myProjectList, myNewProject])
   }
+
 
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/myprojects">
-          <MyProjects myProjectList={myProjectList}/>
+          <MyProjects myProjectList={myProjectList} />
         </Route>
         <Route exact path="/addproject">
           <AddProject handleAddProject={handleAddProject}/>

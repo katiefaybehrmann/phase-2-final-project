@@ -3,10 +3,9 @@ import React from "react";
 function MyProjectsCard({project}){
     return (
         <li className="card">
-            <img src={project.image} alt={project.name}/>
+            <img src={project.image} alt={project.name} id={project.name} />
             <h3>{project.name}</h3>
-            <h4>Difficulty: {project.difficulty}</h4>
-            <button>Delete Project</button>
+            <h4>{project.description}</h4>
         </li>
     )
 }
