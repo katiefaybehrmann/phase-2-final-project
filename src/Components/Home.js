@@ -2,7 +2,7 @@ import React from "react";
 import SearchForm from "./SearchForm";
 import ProjectList from "./ProjectList";
 
-function Home({ projectList, projectType, handleProjectTypeChange }) {
+function Home({ projectList, projectType, handleProjectTypeChange, handleAddToMyList }) {
 
     const projectsToDisplay = projectList.filter((project) => {
         if (projectType === "All") {
@@ -18,7 +18,7 @@ function Home({ projectList, projectType, handleProjectTypeChange }) {
         <div>
             <h1>Welcome to HTTP: Happy Trying Textile Projects!</h1>
             <SearchForm handleProjectTypeChange={handleProjectTypeChange} />
-            <ProjectList projectsToDisplay={projectsToDisplay} />
+            <ProjectList projectsToDisplay={projectsToDisplay} handleAddToMyList={handleAddToMyList} />
         </div>
     )
 }

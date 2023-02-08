@@ -1,9 +1,11 @@
 import React from "react";
+import MyProjectsCard from "./MyProjectsCard";
+import uuid from "react-uuid";
 
-function MyProjects(){
+function MyProjects({myProjectList}){
     return (
         <div>
-            <h1 style={{ color: 'red' }}>This is my projects page. This won't show up at first once I put in navigation.</h1>
+            <ul className="cards">{myProjectList.map(project => <MyProjectsCard key={uuid()} project={project} />)}</ul>
         </div>
     )
 }

@@ -1,15 +1,14 @@
 import React from "react";
 
-function ProjectCard({ project, handleAddToMyList }) {
-
+function MyProjectsCard({project}){
     return (
         <li className="card">
             <img src={project.image} alt={project.name}/>
             <h3>{project.name}</h3>
             <h4>Difficulty: {project.difficulty}</h4>
-            <button id={project.name} onClick={handleAddToMyList}>Add to My Projects</button>
+            <button>Delete Project</button>
         </li>
     )
 }
 
-export default ProjectCard;
+export default MyProjectsCard
