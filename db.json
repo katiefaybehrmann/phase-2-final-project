@@ -1,44 +1,52 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "name": "Knit Mittens",
-            "image": "https://images4-f.ravelrycache.com/uploads/JessicaGore/823497263/webp/_MG_802241edit_medium2.webp#jpg",
-            "difficulty": "🧶🧶🧶",
-            "type": "knitting",
-            "description": "Wonderfully warm ribbed knit mittens. The brioche stitch allows for a colorful, fun striped pattern."
-        },
-        {
-            "id": 2,
-            "name": "Embroidered Trees",
-            "image": "https://cutesycrafts.com/wp-content/uploads/2019/12/il_1588xN.1601293003_mhqv.jpg",
-            "difficulty": "🧶",
-            "type": "embroidery",
-            "description": "Using seed stitches, back stitches, and satin stitches, create a perfect wall hanging for any rustic cabin!"
-        },
-        {
-            "id": 3,
-            "name": "Darned Socks",
-            "image": "https://i0.wp.com/blog.treasurie.com/wp-content/uploads/2020/10/darning-3.jpg",
-            "difficulty": "🧶🧶",
-            "type": "sewing",
-            "description": "Never throw away another sock! Mending your own socks is fun and simple."
-        },
-        {
-            "id": 4,
-            "name": "Crocheted Doll",
-            "image": "https://images4-f.ravelrycache.com/uploads/CAROcreated/802244485/webp/A_medium2.webp#jpg",
-            "difficulty": "🧶🧶🧶🧶🧶",
-            "type": "crochet",
-            "description": "Create a doll with anyone's likeness with this advanced crochet pattern!"
-        },
-        {
-            "id": 5,
-            "name": "Embroidered Jungle",
-            "image": "https://i.pinimg.com/originals/e9/9a/e3/e99ae391b66dc14c4da438171cbf245e.jpg",
-            "difficulty": "🧶🧶🧶🧶",
-            "type": "embroidery",
-            "description": "Ready to step up your embroidery game? Check out this embroidered jungle filled with complicated stitches."
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "name": "Knit Mittens",
+      "image": "https://images4-f.ravelrycache.com/uploads/JessicaGore/823497263/webp/_MG_802241edit_medium2.webp#jpg",
+      "difficulty": "🧶🧶🧶",
+      "type": "knitting",
+      "description": "Wonderfully warm ribbed knit mittens. The brioche stitch allows for a colorful, fun striped pattern."
+    },
+    {
+      "id": 2,
+      "name": "Embroidered Trees",
+      "image": "https://cutesycrafts.com/wp-content/uploads/2019/12/il_1588xN.1601293003_mhqv.jpg",
+      "difficulty": "🧶",
+      "type": "embroidery",
+      "description": "Using seed stitches, back stitches, and satin stitches, create a perfect wall hanging for any rustic cabin!"
+    },
+    {
+      "id": 3,
+      "name": "Darned Socks",
+      "image": "https://i0.wp.com/blog.treasurie.com/wp-content/uploads/2020/10/darning-3.jpg",
+      "difficulty": "🧶🧶",
+      "type": "sewing",
+      "description": "Never throw away another sock! Mending your own socks is fun and simple."
+    },
+    {
+      "id": 4,
+      "name": "Crocheted Doll",
+      "image": "https://images4-f.ravelrycache.com/uploads/CAROcreated/802244485/webp/A_medium2.webp#jpg",
+      "difficulty": "🧶🧶🧶🧶🧶",
+      "type": "crochet",
+      "description": "Create a doll with anyone's likeness with this advanced crochet pattern!"
+    },
+    {
+      "id": 5,
+      "name": "Embroidered Jungle",
+      "image": "https://i.pinimg.com/originals/e9/9a/e3/e99ae391b66dc14c4da438171cbf245e.jpg",
+      "difficulty": "🧶🧶🧶🧶",
+      "type": "embroidery",
+      "description": "Ready to step up your embroidery game? Check out this embroidered jungle filled with complicated stitches."
+    },
+    {
+      "name": "Bubble sweater",
+      "image": "https://knithacker.com/wp-content/uploads/2022/03/il_794xN.3032722729_snwz.jpg",
+      "difficulty": "🧶🧶🧶",
+      "type": "Knitting",
+      "description": "A big, chunky bubble sweater. Surprisingly easy!",
+      "id": 6
+    }
+  ]
 }

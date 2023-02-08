@@ -5,19 +5,46 @@ function AddProject({ handleAddProject }) {
         name: "",
         image: "",
         difficulty: "",
-        type:"",
+        type: "",
         description: ""
     })
-    
+
+    function handleChange(event) {
+        console.log(event.target.value)
+        setProjectInfo({
+            ...projectInfo,
+            [event.target.name]: event.target.value,
+        });
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        fetch("http://localhost:3001/projects", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            "name": projectInfo.name,
+            "image": projectInfo.image, 
+            "difficulty": projectInfo.difficulty,
+            "type": projectInfo.type,
+            "description": projectInfo.description
+          })
+        })
+          .then(r => r.json())
+          .then(p => handleAddProject(p))
+      }
+
     return (
         <div>
             <h2>Add a Project</h2>
-            <form>
-                <input type="text" name="name" placeholder="Name" />
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="name" placeholder="Name" onChange={handleChange}/>
                 <br />
-                <input type="text" name="image" placeholder="Image URL" />
+                <input type="text" name="image" placeholder="Image URL" onChange={handleChange}/>
                 <br />
-                <fieldset>
+                <fieldset onChange={handleChange}>
                     <h3>Project Difficulty</h3>
                     <input type="radio" id="one" name="difficulty" value="🧶" />
                     <label for="one">🧶</label><br />
@@ -27,11 +54,11 @@ function AddProject({ handleAddProject }) {
                     <label for="three">🧶🧶🧶</label><br />
                     <input type="radio" id="four" name="difficulty" value="🧶🧶🧶🧶" />
                     <label for="four">🧶🧶🧶🧶</label><br />
-                    <input type="radio" name="five" placeholder="🧶🧶🧶🧶🧶" />
+                    <input type="radio" id="five" name="difficulty" placeholder="🧶🧶🧶🧶🧶" />
                     <label for="five">🧶🧶🧶🧶🧶</label><br />
                 </fieldset>
                 <br />
-                <fieldset>
+                <fieldset onChange={handleChange}>
                     <h3>Type of Project</h3>
                     <input type="radio" id="knitting" name="type" value="Knitting" />
                     <label for="knitting">Knitting</label><br />
@@ -43,7 +70,7 @@ function AddProject({ handleAddProject }) {
                     <label for="sewing">Sewing</label><br />
                 </fieldset>
                 <br />
-                <input type="text" name="description" placeholder="Description" />
+                <input type="text" name="description" placeholder="Description" onChange={handleChange}/>
                 <br />
                 <button type="submit" >Add Project</button>
             </form>
