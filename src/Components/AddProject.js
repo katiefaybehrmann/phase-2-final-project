@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 function AddProject({ handleAddProject }) {
+    const [projectInfo, setProjectInfo] = useState({
+        name: "",
+        image: "",
+        difficulty: "",
+        type:"",
+        description: ""
+    })
+    
     return (
         <div>
             <h2>Add a Project</h2>
