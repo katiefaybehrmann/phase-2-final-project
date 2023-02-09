@@ -11,6 +11,7 @@ Happy Trying Textile Projects is a simple repository of craft ideas. Users come 
 3. HTTP contains 3 different client-side routes using React Router with appropriate, intuitive naming conventions.
 4. HTTP makes an initial GET request to fetch data from a db.json file. State is set using this fetch request.
 5. Users can POST new information to the API. State is reset.
+6. Project includes simple CSS with thumbnail images, colorscheme, and font.
 
 ### User Journey
 
