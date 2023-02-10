@@ -47,6 +47,30 @@
       "type": "Knitting",
       "description": "A big, chunky bubble sweater. Surprisingly easy!",
       "id": 6
+    },
+    {
+      "name": "Simple Granny Square",
+      "image": "https://sarahmaker.com/wp-content/uploads/2020/04/crochet-granny-square-f.jpg.webp",
+      "difficulty": "🧶",
+      "type": "Crochet",
+      "description": "The simple Granny Square is the basis for many crochet projects. Learn how to do this simple pattern!",
+      "id": 7
+    },
+    {
+      "name": "Large, flowing skirt",
+      "image": "https://montoyamayo.com/wp-content/uploads/2018/04/DIY-Half-Circle-Skirt-with-Pockets-Tutorial-Maxi-Midi-Ankara-African-Wax-Print-1.jpg-9-1-e1524032028653-1440x2149.jpg",
+      "difficulty": "🧶🧶🧶🧶🧶",
+      "type": "Sewing",
+      "description": "This large, beautiful skirt will have you twirling and spinning with glee!",
+      "id": 8
+    },
+    {
+      "name": "Colorblock Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0510/8819/5783/articles/jameswatts_600x.png?v=1654176607",
+      "difficulty": "🧶🧶",
+      "type": "Knitting",
+      "description": "Delightful, fun easy Colorblock tee using worsted yarn. Easy beginner's project.",
+      "id": 9
     }
   ]
 }

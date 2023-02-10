@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 
 function AddProject({ handleAddProject }) {
-    const [projectInfo, setProjectInfo] = useState({
-        name: "",
-        image: "",
-        difficulty: "",
-        type: "",
-        description: ""
-    })
 
-    function handleChange(event) {
-        console.log(event.target.value)
-        setProjectInfo({
-            ...projectInfo,
-            [event.target.name]: event.target.value,
-        });
+    const [name, setName] = useState("")
+    const [image, setImage] = useState("")
+    const [description, setDescription] = useState("")
+    const [difficulty, setDifficulty] = useState("")
+    const [type, setType] = useState("")
+
+    const newProjectObject ={
+        name,
+        image,
+        difficulty,
+        type,
+        description
     }
+
+    console.log(newProjectObject)
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -25,11 +26,11 @@ function AddProject({ handleAddProject }) {
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            "name": projectInfo.name,
-            "image": projectInfo.image, 
-            "difficulty": projectInfo.difficulty,
-            "type": projectInfo.type,
-            "description": projectInfo.description
+            "name": name,
+            "image": image, 
+            "difficulty": difficulty,
+            "type": type,
+            "description": description
           })
         })
           .then(r => r.json())
@@ -40,11 +41,19 @@ function AddProject({ handleAddProject }) {
         <div>
             <h2>Add a Project</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Name" onChange={handleChange}/>
+                <input type="text" 
+                name="name" 
+                placeholder="Name" 
+                value={name} 
+                onChange={e => setName(e.target.value)}/>
                 <br />
-                <input type="text" name="image" placeholder="Image URL" onChange={handleChange}/>
+                <input type="text" 
+                name="image" 
+                placeholder="Image URL" 
+                value={image} 
+                onChange={e => setImage(e.target.value)}/>
                 <br />
-                <fieldset onChange={handleChange}>
+                <fieldset value={difficulty} onChange={e => setDifficulty(e.target.value)}>
                     <h3>Project Difficulty</h3>
                     <input type="radio" id="one" name="difficulty" value="🧶" />
                     <label for="one">🧶</label><br />
@@ -54,11 +63,11 @@ function AddProject({ handleAddProject }) {
                     <label for="three">🧶🧶🧶</label><br />
                     <input type="radio" id="four" name="difficulty" value="🧶🧶🧶🧶" />
                     <label for="four">🧶🧶🧶🧶</label><br />
-                    <input type="radio" id="five" name="difficulty" placeholder="🧶🧶🧶🧶🧶" />
+                    <input type="radio" id="five" name="difficulty" value="🧶🧶🧶🧶🧶" />
                     <label for="five">🧶🧶🧶🧶🧶</label><br />
                 </fieldset>
                 <br />
-                <fieldset onChange={handleChange}>
+                <fieldset value={type} onChange={e => setType(e.target.value)}>
                     <h3>Type of Project</h3>
                     <input type="radio" id="knitting" name="type" value="Knitting" />
                     <label for="knitting">Knitting</label><br />
@@ -70,7 +79,11 @@ function AddProject({ handleAddProject }) {
                     <label for="sewing">Sewing</label><br />
                 </fieldset>
                 <br />
-                <input type="text" name="description" placeholder="Description" onChange={handleChange}/>
+                <input type="text" 
+                name="description" 
+                placeholder="Description" 
+                value={description} 
+                onChange={e => setDescription(e.target.value)}/>
                 <br />
                 <button type="submit" >Add Project</button>
             </form>
