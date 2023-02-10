@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import SearchForm from "./SearchForm";
 import ProjectList from "./ProjectList";
 
-function Home({ projectList, projectType, handleProjectTypeChange, handleAddToMyList }) {
+function Home({ projectList, handleAddToMyList }) {
+    const [projectType, setProjectType] = useState("All")
+
+
+    function handleProjectTypeChange(event) {
+        setProjectType(event.target.value)
+      }
 
     const projectsToDisplay = projectList.filter((project) => {
         if (projectType === "All") {

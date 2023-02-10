@@ -7,7 +7,6 @@ import AddProject from './AddProject';
 
 function App() {
   const [projectList, setProjectList] = useState([])
-  const [projectType, setProjectType] = useState("All")
   const [myProjectList, setMyProjectList] = useState([])
 
   useEffect(() => {
@@ -16,13 +15,9 @@ function App() {
       .then((allProjects) => setProjectList(allProjects))
   }, [])
 
-  function handleProjectTypeChange(event) {
-    setProjectType(event.target.value)
-  }
 
   function handleAddProject(newProject){
     setProjectList([...projectList, newProject])
-
   }
 
   function handleAddToMyList(event) {
@@ -42,7 +37,7 @@ function App() {
           <AddProject handleAddProject={handleAddProject}/>
         </Route>
         <Route exact path="/">
-          <Home projectList={projectList} handleAddToMyList={handleAddToMyList} projectType={projectType} handleProjectTypeChange={handleProjectTypeChange} />
+          <Home projectList={projectList} handleAddToMyList={handleAddToMyList} />
         </Route>
       </Switch>
 
